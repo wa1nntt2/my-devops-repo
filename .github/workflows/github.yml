@@ -1,4 +1,7 @@
-steps:
-  - name: test
-    run: echo "Testing project! This is CI/CD pipeline!"
-        
+stages:
+  - test: 
+
+tests_job:
+  stages: test
+  script: 
+  - echo "Testing project! This is CI/CD pipeline!"
