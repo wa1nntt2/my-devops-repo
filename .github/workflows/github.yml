@@ -1,0 +1,4 @@
+steps:
+  - name: test
+    run: echo "Testing project! This is CI/CD pipeline!"
+        
