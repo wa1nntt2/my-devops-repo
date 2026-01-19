@@ -1,8 +1,13 @@
-stages:
-  - test
+name: Simple Test Job
 
-test-job:
-  stage: test
-  image: alpine:latest  # <-- Используем минимальный Docker-образ
-  script:
-    - echo "Testing project! This is CI/CD pipeline!
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Run test command
+        run: echo "Testing project! This is CI/CD pipeline!"
