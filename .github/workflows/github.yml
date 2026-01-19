@@ -1,9 +1,8 @@
 stages:
-  - test  # Определяем стадию "test"
+  - test
 
-test-job:  # Задача для стадии test
+test-job:
   stage: test
+  image: alpine:latest  # <-- Используем минимальный Docker-образ
   script:
-    - echo "Testing project! This is CI/CD pipeline!"
-  tags:
-    - docker  # Тег для выбора раннера
+    - echo "Testing project! This is CI/CD pipeline!
