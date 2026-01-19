@@ -1,4 +1,4 @@
-name: Simple Test Job
+name: Test
 
 on:
   push:
